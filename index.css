@@ -1,0 +1,341 @@
+@font-face {
+    font-family: "vazir";
+    src: url(files/Vazir.ttf);
+}
+
+@font-face {
+    font-family: "bold";
+    src: url(files/Vazir-Bold.ttf);
+}
+
+html {
+    direction: rtl;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "vazir";
+}
+.parent-blook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.blook {
+    padding: 10px;
+    border-radius: 20px;
+    width: 250px;
+    color: white;
+    margin: 5px;
+}
+
+.js {
+    background-image: linear-gradient(to right, rgb(233, 193, 108), rgb(223, 159, 22));
+    box-shadow: 0px 17px 25px -15px rgb(223, 159, 22);
+    margin-top: -40px;
+}
+
+.brain {
+    background-image: linear-gradient(to right, rgb(141, 171, 255), rgb(130, 86, 252));
+    box-shadow: 0px 17px 25px -15px rgb(130, 86, 252);
+}
+
+.lang {
+    background-image: linear-gradient(to right, rgb(244, 160, 255), rgb(240, 75, 255));
+    box-shadow: 0px 17px 25px -15px rgb(240, 75, 255);
+}
+.img-blook {
+    text-align: start;
+}
+
+.img-blook img {
+    border-radius: 10px;
+}
+
+.text-blook {
+    text-align: start;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+/* language list */
+.p-langs{
+    /* background-color: blue; */
+    position: relative;
+    padding: 30px 0;
+    height: 300px;
+}
+.langs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 90px;
+    width: 50%;
+    margin: 0px 250px 0 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(231, 251, 255);
+    z-index: 99;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+}
+.bg-langs{
+    position: absolute;
+    background-image: url(files/dotted.avif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 250px;
+    background-color: rebeccapurple;
+    top: 100;
+    right:-200;
+    z-index: 98;
+}
+.child-langs{
+    z-index: 99;
+}
+.child-langs ul li {
+    list-style-type: none;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* teacher */
+.teacher {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.teacher div {
+    width: 50%;
+}
+
+.right-teacher {
+    padding: 10px 50px;
+    width: 40% !important;
+    z-index: 3;
+}
+
+.clippath {
+    background-color: rgb(231, 251, 255);
+    clip-path: ellipse(50% 40% at 100% 100%);
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    z-index: 0;
+    width: 700px;
+    height: 700px;
+}
+
+.title {
+    color: rgb(31, 78, 233);
+    font-size: 25px;
+    font-family: "bold" !important;
+    font-weight: 900;
+}
+
+.desc {
+    font-weight: 600;
+    opacity: 0.9;
+    margin-top: 20px;
+}
+
+.btn-box {
+    margin-top: 10px;
+}
+
+.search-btn {
+    background: linear-gradient(to right, rgb(31, 78, 233) 60%, rgb(89, 124, 189));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    border: 0;
+    padding: 8px;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+}
+
+.box {
+    padding: 5px;
+    border-radius: 20px;
+    width: 100% !important;
+}
+
+.info-teacher {
+    position: relative;
+    padding: 5px;
+    width: 60% !important;
+    height: 600px;
+}
+
+.parent-box {
+    border: 2px dashed rgb(146, 146, 146);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.box1 {
+    background: linear-gradient(to right, rgb(31, 78, 233) 60%, rgb(89, 124, 189));
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    z-index: 1;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 90px; */
+    transition: 0.4s all ease-in-out;
+    opacity: 1;
+}
+
+.box2 {
+    position: absolute;
+    top: 40px;
+    right: 300px;
+    z-index: 0;
+    transition: 0.4s all ease-in-out;
+    opacity: 0.7;
+}
+
+.box3 {
+    position: absolute;
+    top: 320px;
+    z-index: 0;
+    right: 300px;
+    transition: 0.4s all ease-in-out;
+    opacity: 0.7;
+}
+
+
+.g-1 {
+    color: white;
+}
+
+.g-2 {
+    color: rgb(31, 78, 233);
+
+}
+
+.g-3 {
+    color: rgb(31, 78, 233);
+
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 100% !important;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    column-gap: 10px;
+    width: 70% !important;
+}
+
+.teacher-img {
+    width: fit-content !important;
+}
+
+.info:first-child img {
+    border-radius: 10px;
+}
+
+.flag {
+    text-align: right;
+    margin-right: 10px;
+    width: 30% !important;
+}
+
+.flag img {
+    border-radius: 10px;
+}
+
+.name {
+    font-size: 19px;
+}
+
+.lang-text {
+    font-size: 13px;
+    color: orange;
+}
+
+.count-star {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    opacity: 0.7;
+    font-size: 10px;
+    column-gap: 2px;
+color:white;
+}
+
+.parent-class {
+    display: block;
+    width: 100% !important;
+    margin-top: 5px;
+}
+
+.search-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    background-color: rgb(71, 102, 206);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: auto;
+}
+
+.desc-teach {
+    width: 100% !important;
+    padding: 9px;
+}
+
+.desc-teach p {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.text-1 {
+    color: white;
+}
+
+.text-2,
+.text-3 {
+    color: black;
+}
+
+.tobottom {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 60px;
+    right: 200px;
+    opacity: 0.4;
+}
+
+.totop {
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 100px;
+    right: 200px;
+    opacity: 0.4;
+
+}
